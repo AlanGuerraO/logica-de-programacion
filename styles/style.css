@@ -1,0 +1,140 @@
+/* Implementación de las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Declaración de las variables CSS */
+:root {
+    --color-primario: #1a1a2e;
+    --color-secundario: #16213e;
+    --color-terciario: #0f3460;
+    --cuarto-color: #e94560;
+    --quinto-color: #eaeaea;
+    --sexto-color: #ffffff; /* Color blanco para el texto en el hover */
+
+    --fuente-titulos: "Inter", sans-serif;
+    --fuente-principal: "Montserrat", sans-serif;
+}
+
+/* Declaración de los valores globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--quinto-color);
+    background: var(--color-primario);
+    font-family: var(--fuente-principal);
+}
+
+a {
+    color: var(--cuarto-color);
+    text-decoration: none;
+}
+
+/* Declaración de los estilos del header */
+.header__nav {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 1%;
+    background: var(--color-secundario);
+}
+
+.header__nav-link {
+    font-size: 1.2rem;
+    color: var(--quinto-color);
+}
+
+.header__nav-link:hover {
+    color: var(--cuarto-color);
+}
+
+/* Declaración de los estilos del contenido */
+
+/* SECCIÓN PRESENTACIÓN */
+.contenido__presentacion-titulo {
+    font-family: var(--fuente-titulos);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--cuarto-color);
+    padding: 1%;
+}
+
+.contenido__presentacion-parrafo {
+    font-size: 2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contenido__presentacion-parrafo a {
+    color: var(--cuarto-color);
+}
+
+/* SECCIÓN EJERCICIOS */
+.contenido__ejercicios-titulo {
+    font-family: var(--fuente-titulos);
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--cuarto-color);
+    padding: 1%;
+}
+
+.contenido__ejercicios-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.contenido__ejercicio-item {
+    display: block;
+    width: 15rem;
+    text-align: center;
+    background: var(--color-terciario);
+    color: var(--quinto-color);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.contenido__ejercicio-item:hover {
+    background: var(--cuarto-color);
+    transform: scale(1.05);
+}
+
+.contenido__ejercicio-text {
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--sexto-color);
+}
+
+/* Estilos para las imágenes en los divs */
+.contenido__ejercicio-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* SECCIÓN PROYECTOS */
+.contenido__proyectos-titulo {
+    font-family: var(--fuente-titulos);
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--cuarto-color);
+    padding: 1%;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: var(--color-secundario);
+    color: var(--quinto-color);
+    font-size: 1.2rem;
+}
