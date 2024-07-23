@@ -92,6 +92,14 @@ console.log(`1 include array ${array.includes(1)}`); //true
 console.log(`8 includes array ${array.includes(8)}`); //false
 console.log("--------------------------------");
 
+//Operador Ternario
+console.log("Operador ternario");
+let edad = 20;
+// Usando el operador ternario para determinar si la persona es mayor de edad
+let mensaje = (edad >= 18) ? 'Eres mayor de edad.' : 'Eres menor de edad.';
+console.log(mensaje); // Salida: Eres mayor de edad.
+console.log("--------------------------------");
+
 //Tipos de estructuras de control
 //Condicional if-else
 console.log("Condicional if-else");
