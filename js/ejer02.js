@@ -14,6 +14,7 @@
 console.log("Funciones basicas");
 console.log("--------------------------------");
 //Funcion sin parametros
+//Estas son funciones hosting, es decir que pueden ser llamadas, en cualquier parte del codigo, incluso si todavia no ha sido creada.
 function funcionSinParametrosNiRetorno() {
     console.log("Hola mundo");
 }
@@ -68,6 +69,8 @@ funcionExterna();
 console.log("--------------------------------");
 
 //Funcion de flecha
+//Sintaxis de la funcion flecha, (parametros) => {Codigo...}, en estas funciones ya no es necesaria la palabra reservada funcion, tambien si es solo un parametro el que tiene la funcion se puede omitir los parentesis, y si es solo una linea de codigo, igual se puede omitir los corchetes.
+// La funcion pasa a ser anonima, es decir no hosting, la cual debe de ser declarada en una variable y despues ser llamada, ya que si se llama antes de ser declarada, genera un error. 
 console.log("Funcion de flecha");
 let resta = (a,b) => a-b;
 let resultadoResta = resta(10,8);
